@@ -186,6 +186,10 @@
               </systemProperties>
               <webApp>
                 <contextPath>/</contextPath>
+                <resourceBases>
+                  <resourceBases>${project.basedir}/src/main/webapp/src</resourceBases>
+                  <resourceBases>${project.basedir}/src/main/webapp</resourceBases>
+                </resourceBases>
                 <overrideDescriptor>${project.basedir}/src/dev/main/webapp/web-override.xml</overrideDescriptor>
               </webApp>
             </configuration>
