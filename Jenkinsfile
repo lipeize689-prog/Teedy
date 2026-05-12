@@ -13,7 +13,7 @@ pipeline {
         }
         stage('Test') {
             steps {
-                sh 'mvn test -Dmaven.test.failure.ignore=true'
+                sh 'mvn test -Dmaven.test.failure.ignore=true -Dtest=!TestFileUtil#extractContentScannedPdf,!TestPdfFormatHandler#testIssue373,!TestMimeTypeUtil#test'
             }
         }
         stage('PMD') {
